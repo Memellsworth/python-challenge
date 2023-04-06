@@ -4,7 +4,7 @@ import csv
 
 
 # define the path that we are reading from. with my program, I have to copy the path or i get a "file does not exist error"
-budget= os.path.join(r'C:\Users\memel\OneDrive\Desktop\python-challenge\PyBank\Resources\budget_data.csv')
+budget = os.path.join(r'Resources','budget_data.csv')
 
 #create your lists 
 date = []
@@ -69,12 +69,13 @@ print(f"Average Change: ${Average_PL}")
 print(f"Greatest Increase in Profits: {date_inc} ($ {Greatest_increase}) ")
 print(f"Greatest Decrease in Profites {date_dec} ($ {Greatest_decrease})")
 
-output_file = os.path.join(r"C:\Users\memel\OneDrive\Desktop\python-challenge\PyBank\Analysis","Financial_Analysis.txt")
+output_file = os.path.join(r"Analysis","Financial_Analysis.txt")
 out_text=(
        f"Financial Analysis \n"
        f"---------------------------------- \n"
        f"Total Months: {months} \n"
        f"Total: $ {total_profit} \n"
+       f"Average Change: ${Average_PL} \n"
        f"Greatest Increase in Profits: {date_inc} ($ {Greatest_increase}) \n"
        f"Greatest Decrease in Profites {date_dec} ($ {Greatest_decrease}) \n")
 with open(output_file,"w") as txt_file:

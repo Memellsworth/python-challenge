@@ -2,9 +2,9 @@ import os
 import csv 
 
 #file to open for the CSV, this is the only way I can get python to navigate to the folder. 
-votes= os.path.join(r"C:\Users\memel\OneDrive\Desktop\python-challenge\PyPoll\Resources\election_data.csv")
+votes= os.path.join(r"Resources","election_data.csv")
 # file destination for the txt file. This is the only way I can get python to navigate to folder.
-output_file = os.path.join(r"C:\Users\memel\OneDrive\Desktop\python-challenge\PyPoll\Analysis","Election_Results.txt")
+output_file = os.path.join(r"Analysis","Election_Results.txt")
 #set your initial variables to 0
 total_votes = 0 
 max_votes = 0 
